@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Topbar = ({ handleAdd }) => (
   <Fragment>
     <Header
-      outerContainerStyles={{ paddingBottom: 10, height: 80 }}
+      outerContainerStyles={{ paddingBottom: 10, height: 70 }}
       leftComponent={
         <Text h4 style={{ color: "#fff" }}>
           Recipe Box
