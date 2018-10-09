@@ -50,8 +50,20 @@ const Textarea = ({ input, meta, ...rest }) => {
 };
 
 Textarea.propTypes = {
-  input: PropTypes.isRequired,
-  meta: PropTypes.isRequired
+  input: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string
+  }),
+  meta: PropTypes.shape({
+    error: PropTypes.string,
+    active: PropTypes.bool,
+    touched: PropTypes.bool
+  })
+};
+
+Textarea.defaultProps = {
+  input: {},
+  meta: {}
 };
 
 export default Textarea;
